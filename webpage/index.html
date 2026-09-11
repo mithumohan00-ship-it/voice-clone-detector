@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DupDub Voice Cloning — Clone Any Voice in Seconds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="10" fill="url(#brandGrad)" />
+            <path d="M9 16C9 12.134 12.134 9 16 9C19.866 9 23 12.134 23 16C23 19.866 19.866 23 16 23" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="3" fill="white"/>
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop stop-color="#3B82F6"/>
+                <stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">DupDub <span class="brand-badge">Voice Studio</span></span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#features" class="nav-link active">Voice Cloning</a>
+        <a href="#voices" class="nav-link">AI Voices</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-text">Sign In</button>
+        <button class="btn-primary">Try for Free <span class="btn-arrow">→</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="main-content">
+    <section class="hero-header">
+      <div class="pill-tag">
+        <span class="sparkle-icon">✨</span> NEXT-GEN AI VOICE CLONING
+      </div>
+      <h1 class="hero-title">
+        Clone Any Voice in <span class="gradient-text">High-Fidelity</span> Seconds
+      </h1>
+      <p class="hero-desc">
+        Replicate authentic human vocal timbre, emotion, natural cadence, and regional accents with just a short audio sample.
+      </p>
+    </section>
+
+    <!-- THE REFERENCE COMPONENT SECTION (EXACT MATCH TO media_1789099428035.png) -->
+    <section class="clone-component-wrapper">
+      <div class="clone-container">
+
+        <!-- Floating Holographic Soundwave Orb (Top Right Overlap) -->
+        <div class="holo-orb" id="holoOrb" title="AI Voice Engine Active · Click to Test">
+          <div class="soundwave-bars">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+            <span class="bar bar-4"></span>
+            <span class="bar bar-5"></span>
+          </div>
+        </div>
+
+        <!-- LEFT PANEL (Step 1: Ingestion) -->
+        <div class="panel panel-left" id="panelLeft">
+          
+          <!-- Card 1: Upload a file -->
+          <div class="action-card upload-card" id="uploadCard" tabindex="0" role="button" aria-label="Upload an audio file">
+            <input type="file" id="fileInput" accept="audio/*,video/mp4,video/quicktime,.mp3,.wav,.mp4,.mov,.m4a" class="sr-only">
+            
+            <div class="card-icon-wrapper">
+              <!-- 3D Blue Folder SVG matching reference image -->
+              <svg class="folder-3d-icon" width="48" height="44" viewBox="0 0 54 48" fill="none">
+                <defs>
+                  <linearGradient id="folderBackGrad" x1="4" y1="6" x2="38" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2563EB"/>
+                    <stop offset="1" stop-color="#1D4ED8"/>
+                  </linearGradient>
+                  <linearGradient id="folderFrontGrad" x1="4" y1="16" x2="48" y2="44" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3B82F6"/>
+                    <stop offset="1" stop-color="#1D4ED8"/>
+                  </linearGradient>
+                  <filter id="folderShadow" x="-10%" y="10%" width="130%" height="130%" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1D4ED8" flood-opacity="0.35"/>
+                  </filter>
+                </defs>
+                <!-- Back Folder Body & Tab -->
+                <path d="M6 10C6 7.79 7.79 6 10 6H19.5C21.1 6 22.6 6.8 23.5 8.1L25.2 10.4C25.8 11.2 26.7 11.6 27.6 11.6H42C44.2 11.6 46 13.4 46 15.6V34C46 36.2 44.2 38 42 38H10C7.79 38 6 36.2 6 34V10Z" fill="url(#folderBackGrad)"/>
+                <!-- Front Folder Body with 3D Lip -->
+                <g filter="url(#folderShadow)">
+                  <path d="M4 16.5C4 14.3 5.8 12.5 8 12.5H44C46.2 12.5 48 14.3 48 16.5V36C48 39.3 45.3 42 42 42H10C6.7 42 4 39.3 4 36V16.5Z" fill="url(#folderFrontGrad)"/>
+                  <path d="M6 16.5C6 15.4 6.9 14.5 8 14.5H44C45.1 14.5 46 15.4 46 16.5V18.5H6V16.5Z" fill="white" fill-opacity="0.22"/>
+                </g>
+              </svg>
+            </div>
+
+            <div class="card-content">
+              <h2 class="card-title">Upload a file</h2>
+              <p class="card-subtitle">mp3, wav, mp4, mov</p>
+            </div>
+
+            <!-- Upload state feedback overlay (hidden until file selected) -->
+            <div class="upload-feedback" id="uploadFeedback">
+              <div class="feedback-badge">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span id="fileNameDisplay">sample_voice.wav</span>
+              </div>
+              <button class="btn-remove-file" id="btnRemoveFile" title="Remove file">✕</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Record your voice -->
+          <div class="action-card record-card" id="recordCard" tabindex="0" role="button" aria-label="Record your voice">
+            <div class="avatar-row">
+              <!-- 5 Diverse Profile Avatars matching reference personas -->
+              <div class="avatar-group">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80" 
+                     onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 40 40\'><circle cx=\'20\' cy=\'20\' r=\'20\' fill=\'%23FBCFE8\'/><circle cx=\'20\' cy=\'16\' r=\'7\' fill=\'%23DB2777\'/><path d=\'M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12\' fill=\'%23DB2777\'/></svg>'" 
+                     alt="Speaker 1 (Blonde glasses)" class="avatar-img">
+                
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&auto=format&fit=crop&q=80" 
+                     onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 40 40\'><circle cx=\'20\' cy=\'20\' r=\'20\' fill=\'%23FED7AA\'/><circle cx=\'20\' cy=\'16\' r=\'7\' fill=\'%23EA580C\'/><path d=\'M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12\' fill=\'%23EA580C\'/></svg>'" 
+                     alt="Speaker 2 (Young man smiling)" class="avatar-img">
+                
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" 
+                     onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 40 40\'><circle cx=\'20\' cy=\'20\' r=\'20\' fill=\'%23E0E7FF\'/><circle cx=\'20\' cy=\'16\' r=\'7\' fill=\'%234F46E5\'/><path d=\'M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12\' fill=\'%234F46E5\'/></svg>'" 
+                     alt="Speaker 3 (Curly hair glasses)" class="avatar-img">
+                
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=100&auto=format&fit=crop&q=80" 
+                     onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 40 40\'><circle cx=\'20\' cy=\'20\' r=\'20\' fill=\'%23FDE68A\'/><circle cx=\'20\' cy=\'16\' r=\'7\' fill=\'%23D97706\'/><path d=\'M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12\' fill=\'%23D97706\'/></svg>'" 
+                     alt="Speaker 4 (Indian woman ornate earrings)" class="avatar-img">
+                
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" 
+                     onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 40 40\'><circle cx=\'20\' cy=\'20\' r=\'20\' fill=\'%23BBF7D0\'/><circle cx=\'20\' cy=\'16\' r=\'7\' fill=\'%2316A34A\'/><path d=\'M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12\' fill=\'%2316A34A\'/></svg>'" 
+                     alt="Speaker 5 (Black man glasses smiling)" class="avatar-img">
+              </div>
+
+              <!-- White Circle with Solid Blue Mic Icon (matching reference exactly) -->
+              <div class="mic-circle" id="micBtn" title="Click to Record">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                  <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="card-title">Record your voice</h2>
+              <p class="card-subtitle">Capture with DupDub</p>
+            </div>
+
+            <!-- Live Recording Active Panel (hidden until user records) -->
+            <div class="recording-widget" id="recordingWidget">
+              <div class="rec-status">
+                <span class="rec-dot"></span>
+                <span class="rec-timer" id="recTimer">00:00</span>
+              </div>
+              <div class="live-wave-visualizer" id="waveVisualizer">
+                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                <span class="wave-bar"></span>
+              </div>
+              <button class="btn-stop-rec" id="btnStopRec">Done</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- STEPPER CONNECTOR (Between Panels) -->
+        <div class="stepper-connector" id="stepper">
+          <div class="connector-track">
+            <div class="step-node node-1 active" id="node1">1</div>
+            <div class="dotted-line" id="dottedLine">
+              <div class="line-progress" id="lineProgress"></div>
+            </div>
+            <div class="step-node node-2" id="node2">2</div>
+          </div>
+          <div class="connector-label" id="connectorLabel">
+            Wait a few<br>seconds
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL (Step 2: Get Voice Cloned) -->
+        <div class="panel panel-right" id="panelRight">
+          
+          <!-- 3D Stylized Avatar Illustration -->
+          <div class="character-container">
+            <!-- Blue Sparkle Stars (✦) matching reference image layout -->
+            <div class="sparkle-star">
+              <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+                <!-- Larger Star -->
+                <path d="M14 10L16.8 20.8L28 24L16.8 27.2L14 38L11.2 27.2L0 24L11.2 20.8L14 10Z" fill="#38BDF8"/>
+                <!-- Smaller Star -->
+                <path d="M36 4L37.8 9.8L44 12L37.8 14.2L36 20L34.2 14.2L28 12L34.2 9.8L36 4Z" fill="#38BDF8"/>
+              </svg>
+            </div>
+
+            <!-- 3D Claymorphism Avatar SVG with Cyan Rim Lighting -->
+            <svg class="clay-avatar-svg" viewBox="0 0 280 340" width="240" height="290" fill="none">
+              <defs>
+                <!-- Hair 3D Gradient -->
+                <linearGradient id="hairGrad" x1="140" y1="20" x2="140" y2="135" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#475569"/>
+                  <stop offset="0.6" stop-color="#1E293B"/>
+                  <stop offset="1" stop-color="#0F172A"/>
+                </linearGradient>
+                <!-- Hair Specular Sheen -->
+                <linearGradient id="hairHighlight" x1="120" y1="28" x2="180" y2="70" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#94A3B8" stop-opacity="0.9"/>
+                  <stop offset="1" stop-color="#475569" stop-opacity="0"/>
+                </linearGradient>
+                <!-- Face / Skin 3D Gradient -->
+                <radialGradient id="skinGrad" cx="130" cy="110" r="70" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#FFE4D6"/>
+                  <stop offset="0.65" stop-color="#FCD5C2"/>
+                  <stop offset="1" stop-color="#EAB39A"/>
+                </radialGradient>
+                <!-- Skin Ambient Neck Shadow -->
+                <linearGradient id="neckShadow" x1="140" y1="155" x2="140" y2="195" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C58F78"/>
+                  <stop offset="1" stop-color="#E2A68C"/>
+                </linearGradient>
+                <!-- Shirt White Claymorphism Gradient -->
+                <linearGradient id="shirtGrad" x1="140" y1="180" x2="140" y2="340" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#FFFFFF"/>
+                  <stop offset="0.45" stop-color="#F8FAFC"/>
+                  <stop offset="1" stop-color="#E2E8F0"/>
+                </linearGradient>
+                <!-- Cyan Rim Lighting Highlight -->
+                <linearGradient id="cyanRim" x1="25" y1="240" x2="130" y2="240" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#00E5FF" stop-opacity="0.95"/>
+                  <stop offset="0.3" stop-color="#38BDF8" stop-opacity="0.5"/>
+                  <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+                </linearGradient>
+                <!-- Soft Drop Shadow Filter -->
+                <filter id="clayShadow" x="-20%" y="-10%" width="140%" height="130%">
+                  <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.12"/>
+                </filter>
+              </defs>
+
+              <g filter="url(#clayShadow)">
+                <!-- Body / Shirt (White crew-neck with rounded shoulders) -->
+                <path d="M40 330C40 250 80 200 110 190L125 185H155L170 190C200 200 240 250 240 330H40Z" fill="url(#shirtGrad)"/>
+                
+                <!-- Vibrant Cyan Rim Light along left arm/shoulder (matching reference) -->
+                <path d="M40 330C40 250 80 200 110 190L125 185L120 205C95 215 60 260 55 330H40Z" fill="url(#cyanRim)"/>
+                <path d="M40 330C40 250 80 200 110 190" stroke="#00E5FF" stroke-width="4.5" stroke-linecap="round" opacity="0.9"/>
+
+                <!-- Neck -->
+                <path d="M124 150V190C124 198.8 131.2 206 140 206C148.8 206 156 198.8 156 190V150H124Z" fill="url(#neckShadow)"/>
+
+                <!-- Head / Face (Minimalist Sculpted Clay Bust) -->
+                <path d="M140 50C106.9 50 82 76.9 82 110C82 143.1 108 175 140 175C172 175 198 143.1 198 110C198 76.9 173.1 50 140 50Z" fill="url(#skinGrad)"/>
+
+                <!-- Left Ear -->
+                <circle cx="82" cy="115" r="14" fill="#EAB39A"/>
+                <circle cx="83" cy="115" r="9" fill="#D6977F"/>
+
+                <!-- Right Ear -->
+                <circle cx="198" cy="115" r="14" fill="#EAB39A"/>
+                <circle cx="197" cy="115" r="9" fill="#D6977F"/>
+
+                <!-- 3D Hair (Sculpted Modern Side-Swept Volume) -->
+                <path d="M84 95C78 68 100 28 142 26C185 24 206 58 202 85C198 70 190 55 170 48C152 42 130 45 118 55C108 63 100 82 84 95Z" fill="url(#hairGrad)"/>
+                <path d="M84 95C85 85 92 70 108 60C125 50 152 48 172 52C192 56 199 72 202 85C204 98 198 116 192 120C188 100 182 82 165 74C148 66 128 72 118 84C108 96 95 110 84 95Z" fill="url(#hairGrad)"/>
+                
+                <!-- Specular Sheen on Hair -->
+                <path d="M120 38C140 34 165 38 175 48" stroke="url(#hairHighlight)" stroke-width="7" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Floating Result Card (Exact Match to Reference Image) -->
+          <div class="result-glass-card" id="resultCard" title="Click to test cloned voice">
+            <div class="result-header">
+              <h2 class="result-title">
+                Get voice <span class="cloned-word">cloned!<svg class="drawn-underline" viewBox="0 0 130 16" fill="none"><path d="M 2 8 C 32 14, 82 14, 126 9" stroke="#111827" stroke-width="4.5" stroke-linecap="round"/></svg></span>
+              </h2>
+              <p class="result-desc">
+                Replicate the speaking style, accent, and any nuances within the voice
+              </p>
+            </div>
+
+            <!-- Cloned Audio Player Interactive Box (Smoothly reveals on clone / click) -->
+            <div class="audio-player-box" id="audioPlayerBox">
+              <div class="player-top">
+                <button class="play-btn" id="playBtn" aria-label="Play sample audio">
+                  <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="6 4 20 12 6 20 6 4"/>
+                  </svg>
+                  <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                    <rect x="6" y="4" width="4" height="16"/>
+                    <rect x="14" y="4" width="4" height="16"/>
+                  </svg>
+                </button>
+
+                <div class="waveform-container" id="waveformContainer" title="Click anywhere to scrub">
+                  <!-- Dynamic Waveform Bars -->
+                  <div class="waveform-bars" id="waveformBars"></div>
+                </div>
+
+                <span class="audio-time" id="audioTime">00:08</span>
+              </div>
+
+              <!-- Metrics & Quality Tags -->
+              <div class="tag-row">
+                <span class="tag-pill tag-blue">✨ 99.8% Natural Timbre</span>
+                <span class="tag-pill tag-purple">Acoustic Cadence</span>
+                <span class="tag-pill tag-green">Zero-Shot Synthesis</span>
+              </div>
+
+              <!-- Player Action buttons -->
+              <div class="player-actions">
+                <button class="btn-secondary-sm" id="btnTestVoice">⚡ Custom Text</button>
+                <button class="btn-primary-sm" id="btnDownloadVoice">Download WAV</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Additional Features Section -->
+    <section class="features-grid" id="features">
+      <div class="feature-item">
+        <div class="feat-icon">🎙️</div>
+        <h3>Rapid Voice Capture</h3>
+        <p>Record just 5–10 seconds of natural speech. No complicated studio equipment required.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feat-icon">⚡</div>
+        <h3>Instant Synthesis</h3>
+        <p>Our lightweight neural models analyze phonetic nuances and generate realistic speech in seconds.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feat-icon">🌐</div>
+        <h3>Multilingual & Accents</h3>
+        <p>Preserve regional dialects, Indian English phonetics, and distinctive vocal rhythms flawlessly.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feat-icon">🛡️</div>
+        <h3>Ethical & Secure</h3>
+        <p>Built-in biometric anti-spoofing verification and privacy-first consent safeguards.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 DupDub AI Voice Studio · Built with Modern Web Standards</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">API Documentation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
